@@ -1,14 +1,16 @@
-import {ProtractorBrowser} from 'protractor';
+import { ProtractorBrowser } from 'protractor';
 
 export declare interface SimpleResponseMock {
     status: number,
-    data: string
+    data: string,
+    headers: object
 }
 
 export declare interface ResponseMock {
     status: number,
     numberOfRequests: number,
-    data: string
+    data: string,
+    headers: object
 }
 
 export declare interface MockConfig {
